@@ -23,7 +23,7 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Set port environment variable
-ENV PORT=8000
+ENV PORT=7860
 
 # Run g4f API
-CMD ["sh", "-c", "python3 -m g4f.cli api --bind 0.0.0.0:$PORT"]
+CMD ["sh", "-c", "python3 -m g4f.cli api --bind 0.0.0.0:7860"]
